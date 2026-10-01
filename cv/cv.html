@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+  Source for Tom-Chiyaka-CV.pdf (one A4 page).
+  To regenerate after editing, from the project folder run:
+  msedge --headless=new --no-pdf-header-footer --print-to-pdf="Tom-Chiyaka-CV.pdf" "cv/cv.html"
+  (or open this file in a browser, Print, "Save as PDF", margins: None, background graphics: on)
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tom Chiyaka (TJ) | Football CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    @page{size:A4;margin:0}
+    :root{--ink:#14181d;--muted:#5d6670;--line:#e3e7ea;--dark:#0b0d10;--accent:#c7ff4a;--accent-ink:#4f6b00}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);font-size:10pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact;background:#fff}
+    .page{width:210mm;height:297mm;overflow:hidden;display:flex;flex-direction:column}
+
+    header{background:var(--dark);color:#f4f7f5;padding:13mm 14mm 11mm;display:flex;gap:9mm;align-items:center;position:relative;overflow:hidden}
+    .headshot{width:34mm;height:42mm;border-radius:5mm;overflow:hidden;flex:none;position:relative;border:1px solid rgba(255,255,255,.15)}
+    .headshot img{position:absolute;width:85mm;left:-14.5mm;top:-38.5mm}
+    .eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.16em;font-weight:800;font-size:7.5pt}
+    h1{font-size:30pt;line-height:1;letter-spacing:-.04em;margin:2.5mm 0 3mm;font-weight:900}
+    h1 span{color:var(--accent)}
+    .roles{display:flex;flex-wrap:wrap;gap:2mm;margin-bottom:3.5mm}
+    .roles span{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);border-radius:99px;padding:.8mm 3mm;font-size:8pt;color:#d7dde2}
+    .contact-line{font-size:8.6pt;color:#c9d0d6}
+    .contact-line b{color:#fff}
+
+    main{flex:1;display:grid;grid-template-columns:62mm 1fr}
+    aside{background:#f4f6f7;padding:9mm 7mm 9mm 14mm;border-right:1px solid var(--line)}
+    .content{padding:9mm 14mm 9mm 9mm}
+    h2{font-size:8pt;text-transform:uppercase;letter-spacing:.14em;font-weight:800;margin:0 0 3mm;color:var(--ink);display:flex;align-items:center;gap:2.5mm}
+    h2:before{content:"";width:3.5mm;height:3.5mm;border-radius:1mm;background:var(--accent);flex:none}
+    section{margin-bottom:7mm}
+    section:last-child{margin-bottom:0}
+
+    .facts{display:grid;gap:2.4mm}
+    .fact span{display:block;color:var(--muted);font-size:7.4pt;text-transform:uppercase;letter-spacing:.06em}
+    .fact b{font-weight:700;font-size:9.4pt}
+
+    .chips{display:flex;flex-wrap:wrap;gap:1.6mm}
+    .chips span{background:#fff;border:1px solid var(--line);border-radius:99px;padding:.8mm 2.6mm;font-size:8pt}
+
+    .summary{margin:0;color:#2b3137;font-size:10pt}
+
+    .item{display:grid;grid-template-columns:24mm 1fr;gap:4mm;padding:3mm 0;border-bottom:1px solid var(--line)}
+    .item:first-of-type{padding-top:0}
+    .item:last-child{border-bottom:0;padding-bottom:0}
+    .item .when{font-weight:800;color:var(--accent-ink);font-size:9pt}
+    .item h3{margin:0;font-size:10.5pt;font-weight:800}
+    .item h3 small{font-weight:500;color:var(--muted);font-size:8.6pt}
+    .item p{margin:.8mm 0 0;color:#3c434a;font-size:9.2pt}
+
+    .strengths{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm 5mm}
+    .strengths div{font-size:9pt;color:#3c434a}
+    .strengths b{display:block;color:var(--ink);font-size:9.4pt}
+
+    .links{display:grid;gap:2.2mm;font-size:8.8pt}
+    .links b{display:block;font-size:7.4pt;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+    .links a{color:var(--ink);text-decoration:none;font-weight:700;word-break:break-all}
+
+    footer{background:var(--dark);color:#a7b0b8;font-size:7.8pt;padding:4mm 14mm;display:flex;justify-content:space-between}
+    footer b{color:var(--accent)}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="headshot"><img src="../img/awards1.jpeg" alt="Tom Chiyaka"></div>
+      <div>
+        <div class="eyebrow">Football Player CV · Free Agent</div>
+        <h1>Tom Chiyaka <span>(TJ)</span></h1>
+        <div class="roles"><span>Striker</span><span>Winger</span><span>Attacking Midfielder</span><span>Right-footed · Comfortable on left</span></div>
+        <div class="contact-line">Contact: <b>Ruth Ngosa</b> · <b>+260 977 717 172</b> (call / WhatsApp)</div>
+      </div>
+    </header>
+
+    <main>
+      <aside>
+        <section>
+          <h2>Player details</h2>
+          <div class="facts">
+            <div class="fact"><span>Date of birth</span><b>28 January 2007</b></div>
+            <div class="fact"><span>Nationality</span><b>Zambian</b></div>
+            <div class="fact"><span>Height</span><b>1.80 m</b></div>
+            <div class="fact"><span>Weight</span><b>63 kg</b></div>
+            <div class="fact"><span>Preferred foot</span><b>Right (comfortable on left)</b></div>
+            <div class="fact"><span>Main position</span><b>Striker</b></div>
+            <div class="fact"><span>Other positions</span><b>Winger · Attacking Midfielder</b></div>
+            <div class="fact"><span>Contract status</span><b>Free Agent</b></div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <div class="facts"><div class="fact"><b>Twin Palm Secondary School</b></div></div>
+        </section>
+
+        <section>
+          <h2>Languages</h2>
+          <div class="chips"><span>English</span></div>
+        </section>
+
+        <section>
+          <h2>Video &amp; links</h2>
+          <div class="links">
+            <div><b>Highlight reel</b><a href="https://youtu.be/keT0mXO67_I">youtu.be/keT0mXO67_I</a></div>
+            <div><b>WhatsApp</b><a href="https://wa.me/260977717172">wa.me/260977717172</a></div>
+          </div>
+        </section>
+      </aside>
+
+      <div class="content">
+        <section>
+          <h2>Profile</h2>
+          <p class="summary">Dynamic attacking player who leads the line as a striker and can also operate from the wing or as an attacking midfielder. Two-footed finishing, creative play, long-range threat, stamina and attacking intensity. Positional versatility gives coaches options across the front line.</p>
+        </section>
+
+        <section>
+          <h2>Playing career</h2>
+          <div class="item"><div class="when">2025</div><div><h3>Surge FC <small>· Senior</small></h3><p>Most recent club.</p></div></div>
+          <div class="item"><div class="when">2023–2025</div><div><h3>Central City FC <small>· Senior</small></h3><p>Competed at senior level; developed tactical awareness and physical conditioning.</p></div></div>
+          <div class="item"><div class="when">2016–2021</div><div><h3>Lusaka Youth Team <small>· Youth</small></h3><p>Key contributor in local youth tournaments with exposure through regional matches.</p></div></div>
+        </section>
+
+        <section>
+          <h2>International experience &amp; honours</h2>
+          <div class="item"><div class="when">2026</div><div><h3>Portugal <small>· Two-month trial</small></h3><p>Gained valuable experience and developed tactical skills in a different football environment.</p></div></div>
+          <div class="item"><div class="when">2026</div><div><h3>Nigeria <small>· Trial</small></h3><p>International trial exposure.</p></div></div>
+          <div class="item"><div class="when">2021</div><div><h3>FAZ Under-19 League Champion</h3><p>Played a crucial role in the title win, showing leadership, scoring consistency and creative playmaking.</p></div></div>
+        </section>
+
+        <section>
+          <h2>Core strengths</h2>
+          <div class="strengths">
+            <div><b>Creative attacking play</b>Creates and connects in advanced areas.</div>
+            <div><b>Two-foot finishing</b>Comfortable finishing with either foot.</div>
+            <div><b>Passing &amp; control</b>Strong technique in combinations.</div>
+            <div><b>Long-range shooting</b>Carries a powerful shot from distance.</div>
+            <div><b>Physical attacking play</b>Strength and aggression in duels.</div>
+            <div><b>Endurance &amp; stamina</b>Maintains intensity across the match.</div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer><span>Tom Chiyaka (TJ) · Football Player CV</span><span>Available to sign · <b>Free Agent</b></span></footer>
+  </div>
+</body>
+</html>
