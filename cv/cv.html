@@ -18,7 +18,7 @@
     body{font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);font-size:10pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact;background:#fff}
     .page{width:210mm;height:297mm;overflow:hidden;display:flex;flex-direction:column}
 
-    header{background:var(--dark);color:#f4f7f5;padding:13mm 14mm 11mm;display:flex;gap:9mm;align-items:center;position:relative;overflow:hidden}
+    header{flex:none;background:var(--dark);color:#f4f7f5;padding:8mm 14mm 7mm;display:flex;gap:9mm;align-items:center;position:relative;overflow:hidden}
     .headshot{width:34mm;height:42mm;border-radius:5mm;overflow:hidden;flex:none;position:relative;border:1px solid rgba(255,255,255,.15)}
     .headshot img{position:absolute;width:85mm;left:-14.5mm;top:-38.5mm}
     .eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.16em;font-weight:800;font-size:7.5pt}
@@ -29,12 +29,12 @@
     .contact-line{font-size:8.6pt;color:#c9d0d6}
     .contact-line b{color:#fff}
 
-    main{flex:1;display:grid;grid-template-columns:62mm 1fr}
-    aside{background:#f4f6f7;padding:9mm 7mm 9mm 14mm;border-right:1px solid var(--line)}
-    .content{padding:9mm 14mm 9mm 9mm}
+    main{flex:1;min-height:0;display:grid;grid-template-columns:68mm 1fr}
+    aside{background:#f4f6f7;padding:8mm 7mm 6mm 14mm;border-right:1px solid var(--line)}
+    .content{padding:8mm 14mm 6mm 9mm}
     h2{font-size:8pt;text-transform:uppercase;letter-spacing:.14em;font-weight:800;margin:0 0 3mm;color:var(--ink);display:flex;align-items:center;gap:2.5mm}
     h2:before{content:"";width:3.5mm;height:3.5mm;border-radius:1mm;background:var(--accent);flex:none}
-    section{margin-bottom:7mm}
+    section{margin-bottom:5.5mm}
     section:last-child{margin-bottom:0}
 
     .facts{display:grid;gap:2.4mm}
@@ -44,9 +44,9 @@
     .chips{display:flex;flex-wrap:wrap;gap:1.6mm}
     .chips span{background:#fff;border:1px solid var(--line);border-radius:99px;padding:.8mm 2.6mm;font-size:8pt}
 
-    .summary{margin:0;color:#2b3137;font-size:10pt}
+    .summary{margin:0;color:#2b3137;font-size:9.6pt}
 
-    .item{display:grid;grid-template-columns:24mm 1fr;gap:4mm;padding:3mm 0;border-bottom:1px solid var(--line)}
+    .item{display:grid;grid-template-columns:24mm 1fr;gap:4mm;padding:2.4mm 0;border-bottom:1px solid var(--line)}
     .item:first-of-type{padding-top:0}
     .item:last-child{border-bottom:0;padding-bottom:0}
     .item .when{font-weight:800;color:var(--accent-ink);font-size:9pt}
@@ -54,13 +54,13 @@
     .item h3 small{font-weight:500;color:var(--muted);font-size:8.6pt}
     .item p{margin:.8mm 0 0;color:#3c434a;font-size:9.2pt}
 
-    .strengths{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm 5mm}
+    .strengths{display:grid;grid-template-columns:1fr 1fr;gap:2mm 5mm}
     .strengths div{font-size:9pt;color:#3c434a}
     .strengths b{display:block;color:var(--ink);font-size:9.4pt}
 
     .links{display:grid;gap:2.2mm;font-size:8.8pt}
     .links b{display:block;font-size:7.4pt;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
-    .links a{color:var(--ink);text-decoration:none;font-weight:700;word-break:break-all}
+    .links a{color:var(--ink);text-decoration:none;font-weight:700;font-size:8.6pt;white-space:nowrap}
 
     footer{background:var(--dark);color:#a7b0b8;font-size:7.8pt;padding:4mm 14mm;display:flex;justify-content:space-between}
     footer b{color:var(--accent)}
@@ -74,7 +74,7 @@
         <div class="eyebrow">Football Player CV · Free Agent</div>
         <h1>Tom Chiyaka <span>(TJ)</span></h1>
         <div class="roles"><span>Striker</span><span>Winger</span><span>Attacking Midfielder</span><span>Right-footed · Comfortable on left</span></div>
-        <div class="contact-line">Contact: <b>Ruth Ngosa</b> · <b>+260 977 717 172</b> (call / WhatsApp)</div>
+        <div class="contact-line">Portfolio &amp; highlights: <b>sarahngosa.github.io/tj-player-portfolio</b></div>
       </div>
     </header>
 
@@ -88,9 +88,6 @@
             <div class="fact"><span>Height</span><b>1.80 m</b></div>
             <div class="fact"><span>Weight</span><b>63 kg</b></div>
             <div class="fact"><span>Preferred foot</span><b>Right (comfortable on left)</b></div>
-            <div class="fact"><span>Main position</span><b>Striker</b></div>
-            <div class="fact"><span>Other positions</span><b>Winger · Attacking Midfielder</b></div>
-            <div class="fact"><span>Contract status</span><b>Free Agent</b></div>
           </div>
         </section>
 
@@ -101,14 +98,22 @@
 
         <section>
           <h2>Languages</h2>
-          <div class="chips"><span>English</span></div>
+          <div class="facts"><div class="fact"><b>English</b></div></div>
         </section>
 
         <section>
-          <h2>Video &amp; links</h2>
+          <h2>Contacts</h2>
+          <div class="links">
+            <div><b>Ruth Ngosa · call / WhatsApp</b><a href="tel:+260977717172">+260 977 717 172</a></div>
+            <div><b>Kutemba Chiyaka</b><a href="mailto:kutembachiyaka264@gmail.com">kutembachiyaka264@gmail.com</a></div>
+            <div><b>Joshua Sikambale</b><a href="mailto:msikambale@yahoo.com">msikambale@yahoo.com</a></div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Video</h2>
           <div class="links">
             <div><b>Highlight reel</b><a href="https://youtu.be/keT0mXO67_I">youtu.be/keT0mXO67_I</a></div>
-            <div><b>WhatsApp</b><a href="https://wa.me/260977717172">wa.me/260977717172</a></div>
           </div>
         </section>
       </aside>
