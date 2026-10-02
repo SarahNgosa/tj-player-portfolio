@@ -11,10 +11,8 @@ Open `index.html` in any modern browser.
 6. Contact name, email and WhatsApp
 7. Season statistics
 8. Exact Surge FC years
-9. Lusaka Youth Team years (source currently conflicts)
-10. Nigeria trial club + duration
-11. Nationality / passport information if appropriate
-12. Coach references
+9. Nationality / passport information if appropriate
+10. Coach references
 
 ## Media setup
 For local images, place files in `assets/` and replace the placeholder blocks with `<img src="assets/your-photo.jpg" alt="...">`.
